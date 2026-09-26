@@ -25,6 +25,12 @@
 			return "";
 		}
 	};
+	const validImageSource = (value) => {
+		if (typeof value !== "string" || !value.trim()) return "";
+		if (value.startsWith("img/") || value.startsWith("./img/") || value.startsWith("/")) return value;
+		return validUrl(value);
+	};
+	const productImage = (product) => validImageSource(`img/${product.id}.${product.imageExtension || "jpeg"}`);
 	const formatPrice = (price) => new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(Number(price) || 0);
 
 	function createFilters() {
@@ -69,7 +75,7 @@
 		visibleProducts.forEach((product) => {
 			const card = document.createElement("article");
 			card.className = "product-card";
-			const image = validUrl(product.image);
+			const image = productImage(product);
 			card.innerHTML = `
 				<a class="card-image-wrap" href="#produto-${escapeHtml(product.id)}" aria-label="Ver detalhes de ${escapeHtml(product.name)}">
 					${image ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(product.name)}" loading="lazy">` : ""}
@@ -94,7 +100,7 @@
 	}
 
 	function openProduct(product) {
-		const image = validUrl(product.image);
+		const image = productImage(product);
 		const affiliateUrl = validUrl(product.affiliateUrl);
 		dialogContent.innerHTML = `
 			${image ? `<img class="dialog-image" src="${escapeHtml(image)}" alt="${escapeHtml(product.name)}">` : `<div class="dialog-image"></div>`}
