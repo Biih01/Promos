@@ -3,7 +3,10 @@
 
   Para adicionar um produto, copie um objeto do array e altere os campos:
   name, description, price, oldPrice (opcional), source, category,
-  image, badge (opcional) e affiliateUrl.
+  badge (opcional) e affiliateUrl.
+
+  As imagens ficam na pasta img/ e devem usar o id do produto no nome,
+  por exemplo: id "fone-bluetooth" -> img/fone-bluetooth.jpeg.
 
   IMPORTANTE: troque cada affiliateUrl de exemplo pelo seu link de afiliado
   gerado na plataforma. Os links atuais levam às páginas iniciais das lojas
@@ -18,7 +21,6 @@ window.PRODUTOS = [
     oldPrice: 219.90,
     source: "Mercado Livre",
     category: "Eletrônicos",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85",
     badge: "ACHADO DA VEZ",
     affiliateUrl: "https://www.mercadolivre.com.br/"
   },
@@ -30,7 +32,6 @@ window.PRODUTOS = [
     oldPrice: 89.90,
     source: "Shopee",
     category: "Casa & cozinha",
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85",
     badge: "PREÇO ESPECIAL",
     affiliateUrl: "https://shopee.com.br/"
   },
@@ -42,7 +43,6 @@ window.PRODUTOS = [
     oldPrice: 259.90,
     source: "Amazon",
     category: "Moda",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85",
     badge: "BOM ACHADO",
     affiliateUrl: "https://www.amazon.com.br/"
   },
@@ -54,7 +54,6 @@ window.PRODUTOS = [
     oldPrice: 119.90,
     source: "Mercado Livre",
     category: "Casa & cozinha",
-    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85",
     badge: "-30%",
     affiliateUrl: "https://www.mercadolivre.com.br/"
   },
@@ -66,7 +65,6 @@ window.PRODUTOS = [
     oldPrice: 159.90,
     source: "Shopee",
     category: "Acessórios",
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85",
     badge: "MAIS VENDIDO",
     affiliateUrl: "https://shopee.com.br/"
   },
@@ -78,7 +76,6 @@ window.PRODUTOS = [
     oldPrice: 299.90,
     source: "Amazon",
     category: "Eletrônicos",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85",
     badge: "OFERTA",
     affiliateUrl: "https://www.amazon.com.br/"
   }
