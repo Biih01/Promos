@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#f7f7f2" />
+		<meta name="description" content="Garimpo Brasil: uma seleção especial de achados e promoções de lojas confiáveis para você comprar bem." />
+		<title>Garimpo Brasil — achados que valem a pena</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/produtos.js" defer></script>
+		<script src="js/script.js" defer></script>
+	</head>
+	<body>
+		<div class="announcement"><span class="announcement-dot"></span> Seu próximo achado favorito está por aqui</div>
+		<header class="site-header">
+			<a class="brand" href="#inicio" aria-label="Garimpo Brasil, início">
+				<span class="brand-mark" aria-hidden="true">G<span>+</span></span>
+				<span class="brand-name">garimpo<span>brasil</span></span>
+			</a>
+			<nav class="main-nav" aria-label="Navegação principal">
+				<a href="#produtos">Achadinhos</a>
+				<a href="#como-funciona">Como funciona</a>
+				<a href="#sobre">Sobre a loja</a>
+			</nav>
+			<a class="header-cta" href="#produtos">Explorar ofertas <span aria-hidden="true">↗</span></a>
+		</header>
+
+		<main>
+			<section class="hero" id="inicio">
+				<div class="hero-content">
+					<div class="eyebrow"><span>CURADORIA DE ACHADOS</span><span class="eyebrow-line"></span></div>
+					<h1>Comprar bem<br />é um <span>achado.</span></h1>
+					<p class="hero-copy">Aqui você encontra as melhores promoções do Brasil. Produtos que fazem sentido, preços que surpreendem.</p>
+					<a class="button button-dark" href="#produtos">Ver os achadinhos <span aria-hidden="true">↓</span></a>
+					<div class="hero-social-proof"><div class="avatar-stack" aria-hidden="true"><span>✦</span><span>✦</span><span>✦</span></div><span>Achados de várias lojas<br /><strong>em um só lugar</strong></span></div>
+				</div>
+				<div class="hero-art" aria-label="Seleção de produtos em destaque">
+					<div class="hero-sun"></div>
+					<div class="hero-note"><span>GARIMPO<br />DA SEMANA</span><b>✳</b></div>
+					<div class="hero-photo hero-photo-main"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Fones de ouvido em destaque" /></div>
+					<div class="hero-photo hero-photo-small"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=85" alt="Tênis esportivo vermelho" /></div>
+					<div class="floating-tag"><span>ACHADO BOM</span><strong>✓</strong></div>
+					<div class="hero-sticker">BOM<br />DEMAIS!</div>
+				</div>
+				<div class="hero-bottom-label"><span>01 — 06</span><span class="scroll-line"></span><span>DESLIZE PARA DESCOBRIR</span></div>
+			</section>
+
+			<section class="catalog section-wrap" id="produtos">
+				<div class="section-heading">
+					<div><div class="eyebrow"><span>GARIMPO ATUALIZADO</span><span class="eyebrow-line"></span></div><h2>Achadinhos <span>da vez</span><sup>✳</sup></h2></div>
+					<p>Uma seleção esperta, de várias lojas<br class="desktop-only" /> e feita para você encontrar o que procura.</p>
+				</div>
+				<div class="catalog-toolbar">
+					<label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="O que você está procurando?" aria-label="Buscar produtos" /><kbd>⌘ K</kbd></label>
+					<label class="sort-control"><span>Ordenar:</span><select id="sort-select" aria-label="Ordenar produtos"><option value="featured">Em destaque</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="name">Nome A–Z</option></select></label>
+				</div>
+				<div class="filter-row" id="filter-row" aria-label="Filtrar por loja"></div>
+				<div class="results-line"><span id="results-count" aria-live="polite">Carregando achadinhos...</span><span class="results-note">Links seguros para as lojas oficiais <span aria-hidden="true">↗</span></span></div>
+				<div class="product-grid" id="product-grid"></div>
+				<div class="empty-state" id="empty-state" hidden><span>✳</span><h3>Nenhum achado por aqui</h3><p>Tente buscar por outro nome ou escolha uma loja diferente.</p><button class="button button-outline" id="clear-filters">Limpar filtros</button></div>
+				<div class="catalog-footnote"><span class="footnote-icon">i</span><p>Os preços e a disponibilidade podem mudar no site da loja. Confira as condições antes de finalizar sua compra.</p></div>
+			</section>
+
+			<section class="how-it-works" id="como-funciona">
+				<div class="how-intro"><div class="eyebrow eyebrow-light"><span>FÁCIL ASSIM</span><span class="eyebrow-line"></span></div><h2>Achou. Gostou.<br /><span>É seu.</span></h2><p>A gente facilita seu garimpo. Você escolhe, confere os detalhes e compra com segurança direto na loja parceira.</p><a href="#produtos" class="text-link">Encontrar meu próximo achado <span>↗</span></a></div>
+				<div class="steps">
+					<article class="step"><span class="step-number">01</span><span class="step-icon">⌕</span><h3>Encontre</h3><p>Explore nossa seleção e encontre algo que combina com você.</p></article>
+					<article class="step"><span class="step-number">02</span><span class="step-icon">✳</span><h3>Descubra</h3><p>Veja fotos, detalhes, preço e qual loja vende o produto.</p></article>
+					<article class="step"><span class="step-number">03</span><span class="step-icon">↗</span><h3>Compre direto</h3><p>Finalize sua compra na loja oficial, usando nosso link de indicação.</p></article>
+				</div>
+			</section>
+
+			<section class="about-strip" id="sobre"><div class="about-spark">✳</div><div><span class="about-kicker">MENOS TEMPO PROCURANDO. MAIS TEMPO APROVEITANDO.</span><h2>O Brasil inteiro<br class="mobile-only" /> tem bons achados.</h2></div><p>Reunimos produtos de diferentes lojas em uma vitrine prática. O pagamento, a entrega e o atendimento são feitos pela loja onde você compra.</p></section>
+		</main>
+
+		<footer class="site-footer"><a class="brand brand-footer" href="#inicio"><span class="brand-mark" aria-hidden="true">G<span>+</span></span><span class="brand-name">garimpo<span>brasil</span></span></a><p>Garimpo Brasil — boas escolhas começam com um achado.</p><span class="affiliate-disclosure">Esta página pode receber comissão pelas compras feitas através dos links de indicação, sem custo adicional para você.</span><span class="footer-copyright">© <span id="current-year"></span> Garimpo Brasil</span></footer>
+
+		<dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title"><button class="dialog-close" id="dialog-close" aria-label="Fechar detalhes">×</button><div class="dialog-content" id="dialog-content"></div></dialog>
+		<div class="toast" id="toast" role="status" aria-live="polite"></div>
+	</body>
+</html>
