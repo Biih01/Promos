@@ -196,3 +196,4 @@ h1, h2, h3, p { margin-top: 0; }
 	.dialog-content { grid-template-columns: 1fr; }.dialog-image { height: 230px; min-height: 0; }.dialog-info { padding: 24px; }.dialog-info h2 { font-size: 22px; }.dialog-price { margin-bottom: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
